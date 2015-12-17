@@ -2,4 +2,4 @@ Quick demo showing: a) a minion pillar with beacon configuration for Windows Fir
 
 States target ```win*``` glob for name of windows server, and a slack api_key is required for this to fully work.  Designed for a single salt master with a single windows machine as a minion.
 
-Either issue a ```salt 'win*' service.stop 'Windows Firewall'``` command from the master to kickoff the demo or stop the Windows Firewall service on the Windows machine manually.
+Either issue a ```salt 'win*' service.stop MpsSvc``` command from the master to kickoff the demo or stop the Windows Firewall service on the Windows machine manually.  Use a ```salt 'win*' service.status MpsSvc``` to show service state.
